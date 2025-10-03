@@ -26,12 +26,6 @@ include_directories(${GLUT_INCLUDE_DIR})
 include_directories(${CUDA_INCLUDE_DIRS})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-link_directories(${ZED_LIBRARY_DIR})
-link_directories(${GLEW_LIBRARY_DIRS})
-link_directories(${GLUT_LIBRARY_DIRS})
-link_directories(${OpenGL_LIBRARY_DIRS})
-link_directories(${CUDA_LIBRARY_DIRS})
-link_directories(${OpenCV_LIBRARY_DIRS})
 
 IF (CMAKE_SYSTEM_PROCESSOR MATCHES aarch64)
     add_definitions(-DJETSON_STYLE)
