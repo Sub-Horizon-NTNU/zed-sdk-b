@@ -164,3 +164,12 @@ Join the conversation and connect with other ZED SDK users to share ideas, solve
   <a href="https://community.stereolabs.com/" style="text-decoration:none;">
     <img src="https://user-images.githubusercontent.com/32394882/228892794-8840d6c5-54bf-44d3-a95b-d9c51927914f.svg" width="3%" alt="" /></a>
 </div>
+
+
+## Repository purpose and scope
+
+This repository contains the Stereolabs ZED SDK tutorials/sample collection plus a Sub-Horizon camera experiment in [Sub-Horizon/](Sub-Horizon/).
+
+[Sub-Horizon/main.cpp](Sub-Horizon/main.cpp) opens a ZED camera at 30 FPS and shows the left/right images side by side in an OpenCV window. Its [CMake project](Sub-Horizon/CMakeLists.txt) builds `VideoFeed` and requires ZED SDK, CUDA and OpenCV.
+
+The documentation above mainly describes the upstream examples. The separate ROS 2 buoy/boat detection pipeline lives in [usv_object_detector](https://github.com/Sub-Horizon-NTNU/usv_object_detector).
